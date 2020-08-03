@@ -33,6 +33,7 @@ html(lang=config.language data-theme=theme.display_mode)
             block content
       
       - var footer_bg = theme.footer_bg == false ? '' : bg_img
+      - var footer_bg = 'background-color: transparent;'
       - var is_bg = theme.footer_bg == false ? 'color' : 'photo'
       footer#footer(style=footer_bg data-type=is_bg)
         !=partial('includes/footer', {}, {cache:theme.fragment_cache})

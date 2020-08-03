@@ -588,7 +588,7 @@ subtitle:
     - Talk is cheap,show me the code.
 
 # Loading Animation (加載動畫)
-preloader: true
+preloader: false
 
 # aside (側邊欄)
 # --------------------------------------
