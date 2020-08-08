@@ -5,7 +5,7 @@ tags:
   - GDB
 keywords: GDB, 调试, objdump
 description: 本文介绍objdump命令的详细使用方法和示例
-sticky: 100
+sticky: 0
 ---
 
 # **简介**

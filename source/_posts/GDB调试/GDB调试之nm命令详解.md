@@ -8,7 +8,7 @@ categories:
   - GDB
 keywords: GDB, 调试, nm
 description: 本文介绍nm命令的基本使用方法
-sticky: 100
+sticky: 0
 ---
 
 

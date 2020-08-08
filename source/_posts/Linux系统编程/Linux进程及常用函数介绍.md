@@ -8,8 +8,8 @@ categories:
   - Linux系统编程
 
 keywords: Linux,系统编程,进程
-cover: /images/封面图/Linux.jfif
-top_img: /images/封面图/Linux.jfif
+cover: /images/封面图/linux进程.jfif
+top_img: /images/封面图/linux进程.jfif
 description: 本文介绍Linux中进程的概念以及相关函数的使用方法。
 sticky: 0
 
