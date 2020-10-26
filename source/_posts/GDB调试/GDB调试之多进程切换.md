@@ -68,7 +68,7 @@ int main(void)
 
 # 多线程调试
 
-在另一篇博客[《GDB调试之基本指令介绍》](https://kind-ptolemy-135b80.netlify.com/2020/03/29/gdb%E8%B0%83%E8%AF%95%E4%B9%8B%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E4%BB%8B%E7%BB%8D/)中第6章提到了在线程中打断点，这里再介绍下
+在另一篇博客[《GDB调试之基本指令介绍》](http://tianyu-code.top/GDB%E8%B0%83%E8%AF%95/GDB%E8%B0%83%E8%AF%95%E4%B9%8B%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E4%BB%8B%E7%BB%8D/)中第6章提到了在线程中打断点，这里再介绍下
 > 当你的程序是多线程时，你可以定义你的断点是否在所有的线程上，或是在某个特定的线程。
 `break line thread threadNo`
 其中`line`为你的源码行数，threadNo为`info threads`命令中GDB给出的线程ID，若不指定`threadNo`，则为所有线程打断点。

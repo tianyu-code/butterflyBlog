@@ -11,22 +11,6 @@ sticky: 100
 
 ---
 
-# 目录
-
-+ GDB简介
-+ run
-+ attach
-+ list、search
-+ break及相关断点指令
-+ catch捕捉
-+ step、next、finish、continue控制指令
-+ print、wathch、display及相关查看指令
-+ backtrace
-+ 断点命令
-+ 指定源码路径
-+ 查看源代码加载内存
-+ GDB图形化
-
 
 #  [GDB简介](http://www.gnu.org/software/gdb/)
 

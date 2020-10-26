@@ -54,17 +54,22 @@ sticky: 0
 ## 知识点总结
 
 1. 子进程正常退出后，会变成僵尸进程，剩余一些信息以供父进程获取，父进程必须使用wait或者waitpid来清理子进程
+2. 子进程结束时，会向父进程发送SIGCHLD信号，以便父进程注册信号处理函数回收资源，例如：
+    ```C
+    void sig_chld(int signo) 
+    { 
+        pid_t pid; 
+        int stat; 
 
-2. 子进程结束时，会向父进程发送SIGCHLD信号，以便父进程回收资源
-
+        while ( (pid = waitpid(-1, &stat, WNOHANG)) > 0) //非阻塞
+            printf("child %d terminated\n", pid); 
+        return; 
+    }
+    ```
 3. 父进程退出时，若有未回收的资源，那么init进程会代为回收
-
 4. 父进程退出时，若有运行中的子进程，它们会被init进程领养（即父进程改为1）
-
 5. 父进程退出时，可使用prctl来通知子进程退出，即向子进程发送信号，例如prctl(PR_SET_PDEATHSIG,SIGKILL)
-
 6. fork之后父子进程的执行顺序是不确定的，这取决于内核的调度算法
-
 7. fork之后父子进程的缓冲区和文件位移量也会被复制
 
 

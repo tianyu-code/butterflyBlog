@@ -3,6 +3,8 @@ title: GDB调试之objdump命令
 date: 2020-04-04 15:18:37
 tags:
   - GDB
+categories:
+  - GDB
 keywords: GDB, 调试, objdump
 description: 本文介绍objdump命令的详细使用方法和示例
 sticky: 0
